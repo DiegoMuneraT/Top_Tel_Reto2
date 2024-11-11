@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: nfs-wp-pvc
+spec:
+  storageClassName: nfs-wp-csi
+  accessModes: [ReadWriteOnce]
+  resources:
+    requests:
+      storage: 5Gi
